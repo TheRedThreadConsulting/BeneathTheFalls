@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beneath the Falls | Where Water Flows and Fairies Grow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#251c2d",
+              "outline-variant": "#4d4553",
+              "on-primary-fixed": "#000000",
+              "tertiary-dim": "#00ed7b",
+              "primary-fixed-dim": "#b075ff",
+              "inverse-primary": "#7e29df",
+              "secondary-dim": "#00e5ee",
+              "background": "#120c18",
+              "on-primary-container": "#330066",
+              "primary-container": "#ba88ff",
+              "surface-bright": "#32283c",
+              "primary-dim": "#9547f7",
+              "surface-dim": "#120c18",
+              "secondary-container": "#00696e",
+              "error": "#ff6e84",
+              "error-container": "#a70138",
+              "tertiary-fixed-dim": "#00ed7b",
+              "surface-container": "#1e1626",
+              "on-secondary-fixed-variant": "#006266",
+              "on-tertiary-container": "#005b2b",
+              "on-surface-variant": "#b2a7b9",
+              "primary": "#c59aff",
+              "tertiary": "#a5ffb8",
+              "on-secondary-container": "#dffdff",
+              "on-tertiary": "#006530",
+              "secondary-fixed": "#00f4fe",
+              "on-primary-fixed-variant": "#3f007c",
+              "surface-variant": "#2b2234",
+              "secondary-fixed-dim": "#00e5ee",
+              "on-error": "#490013",
+              "on-tertiary-fixed": "#004620",
+              "surface": "#120c18",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-fixed-variant": "#006631",
+              "surface-container-low": "#17101e",
+              "on-background": "#f4e7f9",
+              "on-secondary-fixed": "#004346",
+              "surface-container-highest": "#2b2234",
+              "on-secondary": "#00575b",
+              "secondary": "#00f4fe",
+              "surface-tint": "#c59aff",
+              "inverse-on-surface": "#5b5261",
+              "tertiary-container": "#00fd84",
+              "on-surface": "#f4e7f9",
+              "error-dim": "#d73357",
+              "outline": "#7c7282",
+              "on-error-container": "#ffb2b9",
+              "on-primary": "#420082",
+              "tertiary-fixed": "#00fd84",
+              "primary-fixed": "#ba88ff",
+              "inverse-surface": "#fff7fe"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #120c18;
+            color: #f4e7f9;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(24px);
+            background: rgba(43, 34, 52, 0.6);
+        }
+        .crystal-glow {
+            filter: drop-shadow(0 0 15px rgba(197, 154, 255, 0.4));
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-purple-950/60 dark:bg-[#17101e]/60 backdrop-blur-2xl no-border shadow-[0_1px_10px_rgba(197,154,255,0.1)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-serif italic text-purple-200 dark:text-[#c59aff] tracking-tight" href="#">Beneath the Falls</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-teal-400 dark:text-[#00f4fe] font-bold border-b-2 border-teal-400 dark:border-[#00f4fe] pb-1 font-label" href="#">Home</a>
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-label" href="#">Shop</a>
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-label" href="#">About Us</a>
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-label" href="#">Ethical Sourcing</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-white/5 rounded-full px-4 py-2 border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-on-surface-variant/50" placeholder="Search the Vault..." type="text"/>
+</div>
+<button class="p-2 hover:bg-white/10 dark:hover:bg-[#2b2234]/50 rounded-lg transition-all text-purple-400 dark:text-[#c59aff]">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10"></div>
+<img class="w-full h-full object-cover scale-105 opacity-60" data-alt="Bioluminescent mystical waterfall cascading into a deep purple pool with floating emerald and amethyst crystals glowing in ethereal light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmDNCqxxfdQIptA7Yy_5Jes5MTeSUfRcweieW0a5_yzL2P1f0rGW0nzEd1WBfkih2WIzNAurB1BlATRIBBCrM1t8ho23-w8qhWl4palT6NFjx367fAvOdtlkihlZiR7VlBsOvVhjgBxXqstgqHKR67iUzX3MgC4OioS2XuKv0dvjmjLLMwv6xtkAgsMbOOjRKheRQnlk_HrGOM3UUrSovvVR1BHMABHhYRXeCXa0g6wdj82QcYlccxLEIgEWiR8RDxTd86T2N6qg"/>
+</div>
+<div class="relative z-20 text-center px-6 max-w-5xl mx-auto">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/30 border border-secondary/20 text-secondary font-label text-xs uppercase tracking-[0.2em] mb-8">Ethereal Craftsmanship</span>
+<h1 class="font-headline text-5xl md:text-8xl lg:text-9xl mb-6 tracking-tight leading-[0.9]">
+                    Where <span class="text-secondary italic">Water</span> Flows and <span class="text-tertiary">Fairies</span> Grow
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Discover rare geological marvels and celestial curiosities harvested from the deepest, glowing grottos of the hidden falls.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="px-10 py-5 bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed font-bold rounded-full text-lg shadow-[0_0_30px_rgba(197,154,255,0.4)] transition-transform hover:scale-105 active:scale-95 duration-200">
+                        Enter the Vault
+                    </button>
+<button class="px-10 py-5 glass-panel border border-secondary/20 text-secondary font-bold rounded-full text-lg hover:bg-secondary/10 transition-all">
+                        View Ritual Guide
+                    </button>
+</div>
+</div>
+<!-- Floating Crystal Accents (Decorative) -->
+<div class="absolute bottom-20 left-10 hidden xl:block crystal-glow animate-bounce" style="animation-duration: 4s;">
+<div class="w-16 h-32 bg-primary/20 rotate-12 backdrop-blur-sm rounded-t-full rounded-b-lg border-l-4 border-primary/40"></div>
+</div>
+<div class="absolute top-40 right-20 hidden xl:block crystal-glow animate-pulse" style="animation-duration: 6s;">
+<div class="w-12 h-24 bg-tertiary/20 -rotate-12 backdrop-blur-sm rounded-t-full rounded-b-lg border-r-4 border-tertiary/40"></div>
+</div>
+</section>
+<!-- Collections Bento Grid -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<h2 class="font-headline text-4xl md:text-6xl mb-4">The Seasonal Yield</h2>
+<p class="text-on-surface-variant font-body">Limited excavations from the Grotto's inner chambers.</p>
+</div>
+<div class="h-px bg-gradient-to-r from-primary/50 to-transparent flex-1 hidden md:block mx-12 mb-6"></div>
+<a class="text-tertiary font-bold tracking-widest text-xs uppercase flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    Explore All Collections <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto lg:h-[800px]">
+<!-- Large Featured: The Waterfall Collection -->
+<div class="md:col-span-7 relative group overflow-hidden rounded-3xl surface-container-low">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Liquid glowing turquoise water inside a crystal cavern with shimmering reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDP54CufXgrB1x0mwdeG7mJC5szBzqQPhQKVJNE5kug3x_LTLt8CWKbEzVR-kd7v0af8qOKZXXuLGc2lasakqsa2TFfgfCeWynXK70D4x4jGsekGEHcM6mZRPEQt_FEiH0o7CuNrto2VLCglAjBy_Utq0zZImg4lfPg2FmbfoIXsvmnhPPfzbGEnv42zE8lOwHOc_WUmJriYpENkYqEXbmyu9s6G4_5fAF3RIGttdwDsgY_1TtjLYIjhBRA6Tqff0MCphZXHKlBw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-12 z-10 w-full">
+<span class="text-secondary font-bold text-xs uppercase tracking-widest mb-4 block">Aqueous Resonance</span>
+<h3 class="font-headline text-4xl md:text-5xl mb-6">The Waterfall Collection</h3>
+<p class="text-on-surface-variant mb-8 max-w-md leading-relaxed">Infused with the rhythmic pulse of the Cascade, these pieces hold the essence of eternal flow.</p>
+<button class="px-8 py-3 bg-secondary text-on-secondary font-bold rounded-full transition-all hover:shadow-[0_0_20px_rgba(0,244,254,0.4)]">Shop Collection</button>
+</div>
+</div>
+<!-- Right Column Stack -->
+<div class="md:col-span-5 grid grid-rows-2 gap-8">
+<!-- The Earthworks Collection -->
+<div class="relative group overflow-hidden rounded-3xl surface-container-high">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of raw uncut amethyst crystals embedded in dark volcanic rock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJs7YMqyFvyqQp74fk3IVPDczNVMGsXharltQ1ImqLvRXTuDIq2la5zwGOnqPLDm9Cv8wk8n3YOrSydN41yaLsCs9OqztrXZoqQ0s08Cej0AXPyfDR0h5KhMg8UKgSsXW6bBhda5z6zjQQR0FExohzhC8m8zrkph8XVM0EuoZMdsEIybHeyEzWfVnfC4NdCLE-gkXekeKaciGB9JDyuJdHpiLccvOWsVLME6se5OThRymaUDs9J2eodhJcv3MvJkv6sFwWBEnrtA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 z-10">
+<span class="text-tertiary font-bold text-xs uppercase tracking-widest mb-2 block">Telluric Energy</span>
+<h3 class="font-headline text-3xl mb-4">The Earthworks Collection</h3>
+<button class="px-6 py-2 glass-panel border border-tertiary/20 text-tertiary font-bold rounded-full text-sm">Shop</button>
+</div>
+</div>
+<!-- The Celestial Collection -->
+<div class="relative group overflow-hidden rounded-3xl surface-container-highest">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110" data-alt="A nebula style cosmic swirl of purple and pink stardust against a dark sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5DDttygNHiejzTcxBY3nEyVJCFjff1Rd7PeZoXJF5Eovp0fCHoWBghu7REbcwY0T67O1Y8H68wYH_XaF-q38_YT9ygKZGbkDK9pKgMZ2yKGqLwCpX2qaccc5LrpuhLGhYgeg2FT4g0aRFmOxuwcr_0zvRm_JVmG33muC5R915qshA3a-EoyjmiimEqThNQlkdJgt0IfIgYwul9TsXz8-mgcHQQWLlsc2k2TOhRe1gsnL9zd2bSpEI1K7SJjH5shFwZmzjc99ooQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 z-10">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">Stellar Infusion</span>
+<h3 class="font-headline text-3xl mb-4">The Celestial Collection</h3>
+<button class="px-6 py-2 glass-panel border border-primary/20 text-primary font-bold rounded-full text-sm">Shop</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Product Showcase (Asymmetric) -->
+<section class="py-32 relative overflow-hidden bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
+<div class="relative">
+<!-- Offset background decorative element -->
+<div class="absolute -top-12 -left-12 w-full h-full bg-primary/5 rounded-[4rem] -rotate-3"></div>
+<div class="relative glass-panel rounded-[3rem] p-4 overflow-hidden shadow-2xl">
+<img class="w-full h-[600px] object-cover rounded-[2.5rem]" data-alt="A singular giant purple crystal heart resting on a bed of glowing moss" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIM13Qcge-ihqK1EASSthw5FfwHQGpQO9gpUHPKRQEk8Q6hGbgNmUa2gTVUsSbjNFD1xPSszCBz3mYJSiYxPvSG590_6RdbJBo2pGpJMCfX7nGjIUs6IO-su76pbWw61XUgeUCu2sjFtP96O7lBOmrd4sSXuobEMlNVY4RBMomBZe89dXvvj9xCPjLcSWHR15DNUXr8UEqTNRQuR3PKJYkmAXlTe5Lw9XlZAWo9oAv3cQER3rOGqtP9emfKP5SEnkwlesjumzqzw"/>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-10 -right-10 glass-panel p-8 rounded-3xl border border-secondary/20 shadow-xl max-w-xs">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">flare</span>
+</div>
+<span class="font-headline text-xl">The Grotto Heart</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">A one-of-a-kind specimen recovered from the central prism chamber.</p>
+<span class="font-bold text-secondary text-2xl tracking-tighter">$12,400.00</span>
+</div>
+</div>
+<div class="space-y-8">
+<span class="text-tertiary font-bold tracking-widest text-sm uppercase">Curated Masterpiece</span>
+<h2 class="font-headline text-5xl md:text-7xl leading-tight">Vibrancy <br/>Beyond <br/><span class="italic text-primary">Imagination</span></h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                        Our extraction process respects the natural equilibrium of the falls. Each crystal is hand-cleansed in the bioluminescent pools before being prepared for the vault.
+                    </p>
+<div class="grid grid-cols-2 gap-8 py-8">
+<div>
+<span class="block text-3xl font-headline text-secondary mb-1">99.8%</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant/60">Purity Rating</span>
+</div>
+<div>
+<span class="block text-3xl font-headline text-tertiary mb-1">Level 4</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant/60">Luminosity Scale</span>
+</div>
+</div>
+<button class="px-12 py-5 bg-surface-variant hover:bg-surface-bright text-on-surface font-bold rounded-full transition-all border border-outline-variant/30 flex items-center gap-4 group">
+                        Inquire About Procurement
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">auto_awesome</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Saturated CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto rounded-[3rem] bg-gradient-to-br from-purple-900 to-teal-900 p-12 md:p-24 relative overflow-hidden text-center">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-6xl mb-8 leading-tight">Ready to begin your journey into the grotto?</h2>
+<p class="text-purple-100/80 text-lg mb-12">Members gain exclusive first-look access to lunar cycles harvests and VIP gallery showings.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<input class="px-8 py-5 rounded-full bg-white/10 border-white/20 backdrop-blur-md focus:ring-secondary focus:border-secondary text-white placeholder:text-white/50 min-w-[300px]" placeholder="Enter your celestial address" type="email"/>
+<button class="px-10 py-5 bg-white text-purple-950 font-bold rounded-full hover:bg-teal-50 transition-colors">Join the Circle</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-purple-950 dark:bg-[#000000] border-t border-purple-800/30 dark:border-[#2b2234] w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-7xl mx-auto">
+<div class="text-center md:text-left">
+<span class="font-serif text-lg text-purple-300 dark:text-[#c59aff] mb-2 block">Beneath the Falls</span>
+<p class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60">© 2024 Beneath the Falls. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Terms of Service</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-emerald-400 dark:text-[#a5ffb8] hover:bg-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined text-xl">language</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-emerald-400 dark:text-[#a5ffb8] hover:bg-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined text-xl">temp_preferences_custom</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
