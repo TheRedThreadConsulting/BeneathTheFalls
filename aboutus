@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Beneath the Falls</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#251c2d",
+              "outline-variant": "#4d4553",
+              "on-primary-fixed": "#000000",
+              "tertiary-dim": "#00ed7b",
+              "primary-fixed-dim": "#b075ff",
+              "inverse-primary": "#7e29df",
+              "secondary-dim": "#00e5ee",
+              "background": "#120c18",
+              "on-primary-container": "#330066",
+              "primary-container": "#ba88ff",
+              "surface-bright": "#32283c",
+              "primary-dim": "#9547f7",
+              "surface-dim": "#120c18",
+              "secondary-container": "#00696e",
+              "error": "#ff6e84",
+              "error-container": "#a70138",
+              "tertiary-fixed-dim": "#00ed7b",
+              "surface-container": "#1e1626",
+              "on-secondary-fixed-variant": "#006266",
+              "on-tertiary-container": "#005b2b",
+              "on-surface-variant": "#b2a7b9",
+              "primary": "#c59aff",
+              "tertiary": "#a5ffb8",
+              "on-secondary-container": "#dffdff",
+              "on-tertiary": "#006530",
+              "secondary-fixed": "#00f4fe",
+              "on-primary-fixed-variant": "#3f007c",
+              "surface-variant": "#2b2234",
+              "secondary-fixed-dim": "#00e5ee",
+              "on-error": "#490013",
+              "on-tertiary-fixed": "#004620",
+              "surface": "#120c18",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-fixed-variant": "#006631",
+              "surface-container-low": "#17101e",
+              "on-background": "#f4e7f9",
+              "on-secondary-fixed": "#004346",
+              "surface-container-highest": "#2b2234",
+              "on-secondary": "#00575b",
+              "secondary": "#00f4fe",
+              "surface-tint": "#c59aff",
+              "inverse-on-surface": "#5b5261",
+              "tertiary-container": "#00fd84",
+              "on-surface": "#f4e7f9",
+              "error-dim": "#d73357",
+              "outline": "#7c7282",
+              "on-error-container": "#ffb2b9",
+              "on-primary": "#420082",
+              "tertiary-fixed": "#00fd84",
+              "primary-fixed": "#ba88ff",
+              "inverse-surface": "#fff7fe"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #120c18;
+        color: #f4e7f9;
+        font-family: 'Manrope', sans-serif;
+      }
+      .serif-display { font-family: 'Noto Serif', serif; }
+      .glass-card {
+        background: rgba(43, 34, 52, 0.6);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="selection:bg-secondary selection:text-on-secondary-fixed">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-purple-950/60 dark:bg-[#17101e]/60 backdrop-blur-2xl no-border shadow-[0_1px_10px_rgba(197,154,255,0.1)] shadow-2xl backdrop-blur-lg">
+<div class="flex justify-between items-center h-20 px-8 max-w-full mx-auto">
+<div class="text-2xl font-serif italic text-purple-200 dark:text-[#c59aff] tracking-tight">Beneath the Falls</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-sans Manrope label-md" href=index.html>Home</a>
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-sans Manrope label-md" href="#">Shop</a>
+<a class="text-teal-400 dark:text-[#00f4fe] font-bold border-b-2 border-teal-400 dark:border-[#00f4fe] pb-1 font-sans Manrope label-md" href=aboutus.html>About Us</a>
+<a class="text-purple-100/80 dark:text-purple-200/70 hover:text-teal-300 dark:hover:text-[#00f4fe] transition-colors font-sans Manrope label-md" href=ethicalsourcing.html>Ethical Sourcing</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden lg:block">
+<input class="bg-surface-container-highest border-none rounded-full px-6 py-2 text-sm focus:ring-2 focus:ring-secondary/40 w-64 placeholder:text-on-surface-variant/50" placeholder="Search treasures..." type="text"/>
+</div>
+<button class="p-2 hover:bg-white/10 dark:hover:bg-[#2b2234]/50 rounded-lg transition-all text-purple-400 dark:text-[#c59aff]">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Dreamy surreal digital art of a hidden cavern garden behind a waterfall with glowing purple crystals and lush tropical foliage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyMXnjT_vAKMdWOdz6QoesjEaZbQeDmiZf9ACPX2wt3ps-9Td9eNq3JrN_p-pMsgdJD-ZvfDDIqnSPdACVv6APrOLTPcTP5YTkCwYY-FphvxrFPjui2qxIb6M8q767U_XBMKm52upf5Baq4THrAtXMWu5k-ECiuCKkN_cDNREsy0FlkFFiiT8IkCREGYuh7p1pEAu5qd2BeMNZLOTh_XZvvQXuspDkj-U3jNdKd-EAOSwSHZgvOMuT09qlhoqKBgPMe9MKD3sPIA"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 w-full">
+<div class="max-w-4xl space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary-fixed-dim text-xs font-bold tracking-widest uppercase">
+                        Our Origin Story
+                    </div>
+<h1 class="serif-display text-6xl md:text-8xl font-bold text-on-background leading-tight tracking-tighter">
+                        Where Water <br/> <span class="text-secondary italic">Meets Earth</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-body max-w-2xl leading-relaxed">
+                        Beneath the thundering mist of the Great Falls lies a sanctuary untouched by time, where bioluminescent minerals breathe life into an eternal subterranean garden.
+                    </p>
+</div>
+</div>
+</section>
+<!-- The Discovery: Crystalline Overlay -->
+<section class="py-24 px-8 md:px-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-xl blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+<img class="relative rounded-2xl w-full aspect-[4/3] object-cover shadow-2xl" data-alt="Macro photography of a rare violet crystal formation nestled inside a deep green mossy rock crevice with soft glowing light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpDQ3g5N-q-TubbF5IAJQK2aRAVlF-pZNu6n8-PPcBayn0MAFTtCFgvpgoSB5lyUpXRdy-Q8dn2DsuTZ6NmrQuAwo7kre06GEXHDHt7t_78bSBVaUjB-ogWmn2DnFhJx-salzo0AKhl0XJocgYEV4VRk2xGDhURDMtTS_7YgbRw03W4c_mPTuBf55H2I9Kb85cGbdAEIr704ZWW3R3YnfOly8cAJXbupjJJFhURm3SETbN6q8JrlfeihuBNlNvzyjKecQ7bmLoBg"/>
+<div class="absolute -bottom-12 -right-12 hidden md:block w-72 glass-card p-8 rounded-2xl border border-outline-variant/20">
+<span class="text-secondary text-5xl serif-display block mb-4">1894</span>
+<p class="text-sm font-body text-on-surface-variant">The year our founders first documented the luminescent flora of the grotto.</p>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-8">
+<h2 class="serif-display text-5xl text-on-background">The Discovery</h2>
+<div class="space-y-4 font-body text-lg text-on-surface-variant leading-relaxed">
+<p>It started as a rumor among the river guides—a light that glowed beneath the heavy curtain of the Niagara. When we finally broke through the silicate wall, we didn't find a cave; we found an ecosystem.</p>
+<p>Vibrant amethysts pulsed with a rhythm like a heartbeat, casting a soft violet glow over emerald ferns that had never seen the sun. This was the "Enchanted Grotto," the soul of Beneath the Falls.</p>
+</div>
+<button class="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold hover:scale-105 transition-transform">
+                        Explore the Archives
+                    </button>
+</div>
+</div>
+</section>
+<!-- The Curation: Bento Grid Layout -->
+<section class="py-24 bg-surface-container-low">
+<div class="px-8 md:px-24 mb-16">
+<h2 class="serif-display text-5xl text-center mb-4">The Curation</h2>
+<p class="text-center font-body text-on-surface-variant max-w-xl mx-auto">Every element we offer is hand-selected from the grotto's sustainable output, ensuring the grotto thrives for centuries to come.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 px-8 md:px-24 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 glass-card rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Artisanal glass vials filled with glowing green and blue ethereal liquids arranged on a dark stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuOC9Q-3AjodAZNzqFohGT5gca887wCXc0I_Zslnm5KPWBXCA02dHqcuMfKLrIOrMK9-mC7LvyEIa3rUx_V_x5hKmGDr32w8r8ZusmWRzbyX5IgIa6Q3fDzf31eG2CGofuNmeHg8MgVGxQOQWrzEKN2fOz8uXhw956xlUbaOuDVAxg7a0K5y0CWxwfwgeHBaHirSI0AGmclko9bmjgKdjrmfom_TjpEsXuk3NHOWpLw7PiSUJfwyxNt7DRhj4hyYVhcrPEWqikSg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<h3 class="serif-display text-3xl mb-2 text-primary">Living Essence</h3>
+<p class="font-body text-on-surface-variant">Distilled bioluminescence for the modern home.</p>
+</div>
+</div>
+<div class="md:col-span-2 glass-card rounded-3xl p-8 border border-outline-variant/10 flex flex-col justify-end">
+<div class="text-secondary mb-4"><span class="material-symbols-outlined text-4xl">eco</span></div>
+<h3 class="serif-display text-2xl mb-2">Sustainable Harvesting</h3>
+<p class="font-body text-on-surface-variant">We take only what the grotto sheds naturally—fallen crystals and seasonal spores.</p>
+</div>
+<div class="glass-card rounded-3xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:rotate-3 transition-transform" data-alt="Detailed close up of a polished purple amethyst geode with deep saturated violet hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV3fDMju3-EQxa1nLuEGyS_itZ-f7l0W63kzGrXY9PLXoE6aaeV_7tSJDcOt5ggWLYL3IUQwfwDtKBMlXa-Sb1tLubA8ibMOsBeB-XYtWN9hE3DSatSMk8UtbKM0D-8P5iqOvL3Hx6zgZvU9v2RuWn7sTpgjo-3IW-KclInWINwYboJjl-qd1B2jp5YPvT0lnAt3WlWkLAsvJ-LAUoxfLTOOSde6T7uh37OMbWoZ7sizBYpCSS8pEw0dnXM9vNcDHTaQdlv_vR7A"/>
+</div>
+<div class="glass-card rounded-3xl bg-tertiary-container/10 p-8 border border-tertiary/20 flex flex-col justify-center items-center text-center">
+<h4 class="serif-display text-4xl text-tertiary mb-2">100%</h4>
+<p class="text-xs uppercase tracking-widest text-on-tertiary-container font-bold">Traceable Source</p>
+</div>
+</div>
+</section>
+<!-- Sanctuary Pillars -->
+<section class="py-32 px-8 md:px-24 relative">
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-primary/5 blur-[120px] rounded-full"></div>
+<div class="flex flex-col lg:flex-row gap-20 items-start">
+<div class="lg:w-1/3 sticky top-32">
+<h2 class="serif-display text-6xl mb-8 leading-tight">Sanctuary <br/><span class="italic text-tertiary">Pillars</span></h2>
+<p class="font-body text-lg text-on-surface-variant">Our commitment to the Earth and the Spirit is etched into the very stones of our foundation.</p>
+</div>
+<div class="lg:w-2/3 space-y-16">
+<div class="group border-b border-outline-variant/20 pb-12">
+<div class="flex justify-between items-center mb-6">
+<h3 class="serif-display text-3xl group-hover:text-secondary transition-colors">Radical Preservation</h3>
+<span class="text-outline text-xl font-mono">01</span>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                            The grotto is a closed-loop system. We invest 40% of all proceeds into geological stability and water purification systems to protect the delicate balance of the cavern.
+                        </p>
+</div>
+<div class="group border-b border-outline-variant/20 pb-12">
+<div class="flex justify-between items-center mb-6">
+<h3 class="serif-display text-3xl group-hover:text-secondary transition-colors">Artisan Alchemy</h3>
+<span class="text-outline text-xl font-mono">02</span>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                            Our craftsmen are more like monks. They spend years learning to work with reactive minerals, ensuring every product retains its "soul" and energetic frequency.
+                        </p>
+</div>
+<div class="group border-b border-outline-variant/20 pb-12">
+<div class="flex justify-between items-center mb-6">
+<h3 class="serif-display text-3xl group-hover:text-secondary transition-colors">Sensory Connection</h3>
+<span class="text-outline text-xl font-mono">03</span>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+                            We believe luxury should be felt, not just seen. Our items are designed to ground the spirit and elevate the living space through haptic texture and bioluminescent warmth.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="mx-8 md:mx-24 my-24 rounded-[3rem] overflow-hidden relative min-h-[500px] flex items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Deep blue and purple night sky with thousands of stars reflecting over a calm waterfall pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyH7vWEGqQQ4GqnouD9skG__wLOWE0zTMgZv6hdhiPv6qw0TKscB9HsJjxpUS81CJpQHkUsyqeDelgpr-uYiUCuN3G4aGWeGZWgU_5K9TyTk2stf4TraK7bKQIwBW3qzKoiYtNVnt_cp1HjxBh-NKxbREfYFTOch9-sBcKtBYnzjmWDP8aKA3QbRg79kbWO71H2SSQQkRCmbI--ba8fCNmrwXnmg76PBnd5hEUYWwwwztUCkRAnHN5LrP50frZxdBIzEmBSfDwPg"/>
+<div class="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
+<div class="relative z-10 text-center space-y-8 px-6">
+<h2 class="serif-display text-5xl md:text-7xl font-bold max-w-3xl mx-auto">Bring the Grotto into Your World</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="px-10 py-5 rounded-full bg-secondary text-on-secondary font-extrabold text-lg shadow-[0_0_20px_rgba(0,244,254,0.3)] hover:scale-105 transition-transform">
+                        Shop the Collection
+                    </button>
+<button class="px-10 py-5 rounded-full glass-card border border-white/20 text-on-surface font-bold text-lg hover:bg-white/10 transition-colors">
+                        Join the Inner Circle
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Navigation Shell -->
+<footer class="bg-purple-950 dark:bg-[#000000] w-full py-12 px-8 border-t border-purple-800/30 dark:border-[#2b2234]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-serif text-lg text-purple-300 dark:text-[#c59aff]">Beneath the Falls</div>
+<div class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60">
+                    © 2024 Beneath the Falls. All Rights Reserved.
+                </div>
+</div>
+<div class="flex gap-8">
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Terms of Service</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-sans Manrope text-sm tracking-wide text-purple-300/60 dark:text-purple-400/60 hover:text-teal-400 dark:hover:text-[#00f4fe] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/20 transition-colors text-primary">
+<span class="material-symbols-outlined text-lg">public</span>
+</button>
+<button class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/20 transition-colors text-primary">
+<span class="material-symbols-outlined text-lg">mail</span>
+</button>
+</div>
+</div>
+</footer>
+</body></html>
